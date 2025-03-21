@@ -10,6 +10,28 @@ img {
     height: 100vh;
 }
 
+.right {
+    display: grid;
+}
+
+.arrowR {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.returnTo {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    margin-top: 0;
+    margin-bottom: auto;
+    max-width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 3;
+}
+
 .infobox {
     grid-row-start: 1;
     grid-column-start: 1;
@@ -19,7 +41,9 @@ img {
     margin: auto;
     border: solid black;
     display: grid;
+    z-index: 4;
 }
+
 
 .x {
     grid-row-start: 1;
@@ -40,6 +64,7 @@ img {
     margin-right: 5%;
     margin-top: auto;
     margin-bottom: auto;
+    text-align: center;
 }
 
 .info01 {
@@ -67,8 +92,115 @@ img {
     transition: ease-in 0.5s;
 }
 
-.info03:hover {
+.info04 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    height: 20%;
+    width: 10%;
+    margin-top: auto;
+    margin-bottom: 10%;
+    margin-left: auto;
+    margin-right: 0;
+    cursor: pointer;
+    transition: ease-in 0.5s;
+}
+
+.info05 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    height: 20%;
+    width: 8%;
+    margin-top: auto;
     margin-bottom: 2%;
+    margin-left: auto;
+    margin-right: 28%;
+    cursor: pointer;
+    animation: travel1 2s;
+}
+
+.info06 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    height: 20%;
+    width: 8%;
+    margin-top: auto;
+    margin-bottom: 9%;
+    margin-left: auto;
+    margin-right: 38%;
+    cursor: pointer;
+    animation: travel2 2s;
+}
+
+.info07 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    height: 20%;
+    width: 8%;
+    margin-top: auto;
+    margin-bottom: 28%;
+    margin-left: auto;
+    margin-right: 70%;
+    cursor: pointer;
+    animation: travel3 2s;
+
+}
+
+@keyframes travel3 {
+    from {
+        margin-top: auto;
+        margin-bottom: 9%;
+        margin-left: auto;
+        margin-right: 38%;
+    }
+
+    to {
+        margin-top: auto;
+        margin-bottom: 28%;
+        margin-left: auto;
+        margin-right: 70%;
+    }
+}
+
+@keyframes travel2 {
+    from {
+        margin-top: auto;
+        margin-bottom: 2%;
+        margin-left: auto;
+        margin-right: 28%;
+    }
+
+    to {
+        margin-top: auto;
+        margin-bottom: 9%;
+        margin-left: auto;
+        margin-right: 38%;
+    }
+}
+
+
+
+@keyframes travel1 {
+    from {
+        margin-top: auto;
+        margin-bottom: 10%;
+        margin-left: auto;
+        margin-right: 20%;
+    }
+
+    to {
+        margin-top: auto;
+        margin-bottom: 2%;
+        margin-left: auto;
+        margin-right: 28%;
+    }
+}
+
+.info04:hover {
+    margin-bottom: 11%;
+}
+
+.info03:hover {
+    margin-bottom: 1%;
 }
 
 

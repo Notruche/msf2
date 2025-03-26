@@ -35,13 +35,28 @@ img {
 .infobox {
     grid-row-start: 1;
     grid-column-start: 1;
-    background-color: white;
     height: 70%;
-    width: 70%;
+    width: 90%;
     margin: auto;
-    border: solid black;
     display: grid;
     z-index: 4;
+}
+
+.bulle {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+.formulaire {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    background-color: white;
+    height: 70%;
+    width: 50%;
+    margin: auto;
 }
 
 
@@ -52,7 +67,9 @@ img {
     cursor: pointer;
     font-size: 3vw;
     margin-left: auto;
-    margin-right: 1%
+    margin-right: 20%;
+    margin-top: 1%;
+    z-index: 1;
 }
 
 .infotext {
@@ -61,10 +78,11 @@ img {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2vw;
     margin-left: 5%;
-    margin-right: 5%;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-right: 23%;
+    margin-top: 1%;
+    margin-bottom: 1%;
     text-align: center;
+    z-index: 1;
 }
 
 .info01 {
@@ -76,6 +94,16 @@ img {
     margin-top: 8%;
     margin-left: 75%;
     cursor: pointer;
+}
+
+.cursor {
+    height: 20%;
+    width: 23%;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    margin-top: 28%;
+    margin-left: 70%;
+    transform: rotate(45deg)
 }
 
 
@@ -92,15 +120,28 @@ img {
     transition: ease-in 0.5s;
 }
 
+.info-c {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    height: 25%;
+    width: 15%;
+    margin-top: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    transition: ease-in 0.5s;
+}
+
 .info04 {
     grid-row-start: 1;
     grid-column-start: 1;
     height: 20%;
     width: 10%;
     margin-top: auto;
-    margin-bottom: 10%;
-    margin-left: auto;
-    margin-right: 0;
+    margin-bottom: 1%;
+    margin-left: 0;
+    margin-right: auto;
     cursor: pointer;
     transition: ease-in 0.5s;
 }
@@ -196,13 +237,16 @@ img {
 }
 
 .info04:hover {
-    margin-bottom: 11%;
+    margin-bottom: 2%;
 }
 
 .info03:hover {
     margin-bottom: 1%;
 }
 
+.info-c:hover {
+    margin-bottom: 1%;
+}
 
 
 .grille {
